@@ -1,0 +1,10 @@
+{
+    "development":{
+        "PORT":3300,
+        "MONGODB_URI": "mongodb://localhost:27017/FBDatabase"
+    },
+    "production":{
+        "PORT":8008,
+        "MONGODB_URI": "mongodb://localhost:27017/FBDatabase"
+    }
+}

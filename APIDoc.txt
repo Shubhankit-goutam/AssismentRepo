@@ -1,0 +1,75 @@
+signup APi :::
+http://localhost:3300/api/register
+
+parameters::
+{
+    "name": "akshay",
+    "email":"akshay@gmail.com",
+    "phoneno":"9997271394",
+    "password":"akshay",
+    "unfriend": 0,
+    "delete":0,
+    "friendship":[]
+
+}
+
+SignIn Api
+http://localhost:3300/api/login
+parameters::
+{
+   
+    "email":"shu@gmail.com",
+    "password":"shu123"
+
+}
+
+sendfriendrequest Api
+http://localhost:3300/api/frdzrequest
+parameters::
+{
+    "friendId": "6243ea43d9e55fdd0eb21867",
+    "requester": 1,
+    "recipient":1
+
+}
+
+Delete request and unfriend request api
+
+http://localhost:3300/api/deleteFriend
+parameters::
+
+{
+    "id": "6243ea43d9e55fdd0eb21867",
+    "type": "unfriend", // delete
+    "unfriend":1
+
+}
+
+add post api 
+http://localhost:3300/api/AddPost
+
+parameters:::
+     {  "title": "Traveling",
+        "content": "osm rideing ",
+        "imageURL": "https://fix2club.com/assets/img/banner/banner_6.jpg",
+        "author": "divyanshu",
+        "status":"0",
+        "countSee":"0",
+        "userId":"6242f54885663b866aca182a"
+
+     }   
+	 
+delete post api 
+http://localhost:3300/api/deletePost
+	 
+	 parameters:::
+	       { 
+        "id":"62430533f55f9c1c825e14ec"
+     }   
+	 
+get friend list api
+http://localhost:3300/api/Friendlist
+
+user profile list api	 
+http://localhost:3300/api/userProfile
+
